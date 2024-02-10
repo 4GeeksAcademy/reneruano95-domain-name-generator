@@ -28,6 +28,11 @@ window.onload = function() {
 
           const element = document.getElementById("list");
           element.appendChild(para);
+
+          const list = document.querySelectorAll("li");
+          list.forEach(item => {
+            item.classList.add("list-group-item");
+          });
         }
       }
     }
